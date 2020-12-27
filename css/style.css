@@ -81,7 +81,8 @@ ul {
   font-style: normal;
 }
 
-.contacts:hover {
+.contacts:hover,
+.contacts:focus {
   color: var(--acent-color);
 }
 
@@ -104,7 +105,8 @@ ul {
   margin-left: 50px;
 }
 
-.links:hover {
+.links:hover,
+.links:focus {
   color: var(--acent-color);
 }
 
@@ -250,7 +252,6 @@ ul {
 
 .card-staff {
   padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 .section-team {
@@ -275,14 +276,38 @@ ul {
 
 .networks {
   display: flex;
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.networks-item {
+}
+
+.social-link {
+  display: flex;
+  color: #afb1b8;
+  padding: 0;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--primary-white-color);
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: var(--primary-white-color);
+  background-color: var(--acent-color);
 }
 
 .team-icons {
   width: 20px;
   height: 20px;
-  margin-right: 34px;
-  margin-bottom: 42px;
-  fill: #afb1b8;
+  fill: currentColor;
 }
 
 .our-title {
@@ -315,9 +340,6 @@ ul {
   fill: var(--icons-color);
 }
 
-.link-logo {
-}
-
 .icon-clients .item {
   border: 1px solid #afb1b8;
   box-sizing: border-box;
@@ -327,7 +349,8 @@ ul {
   margin-right: 30px;
 }
 
-.icon-clients .item:hover {
+.icon-clients .item:hover,
+.icon-clients .item:focus {
   border: 1px solid var(--acent-color);
 }
 
@@ -335,7 +358,8 @@ ul {
   margin-right: 0px;
 }
 
-.link-logo .logo-clients:hover {
+.link-logo .logo-clients:hover,
+.link-logo .logo-clients:focus {
   fill: var(--acent-color);
 }
 
@@ -349,6 +373,9 @@ footer {
 
 .container-footer {
   display: flex;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .address {
@@ -413,11 +440,33 @@ footer {
 
 .footer-networks {
   display: flex;
+  padding: 0;
+}
+
+.social-links-footer {
+  display: flex;
+  color: var(--primary-white-color);
+  padding: 0;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--paragraph-color);
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.social-links-footer:hover,
+.social-links-footer:focus {
+  color: var(--primary-white-color);
+  background-color: var(--acent-color);
 }
 
 .footer-icons {
   width: 20px;
   height: 20px;
+  fill: currentColor;
 }
 
 /*PORTFOLIO*/
