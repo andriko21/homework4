@@ -341,41 +341,31 @@ header {
 }
 
 .icon-clients .item {
+  margin-right: 30px;
+  width: 170px;
+  height: 90px;
+}
+
+.icon-clients .item:nth-child(6n) {
+  margin-right: 0;
+}
+
+.link-logo {
   display: flex;
 
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   border-radius: 4px;
-  width: 170px;
-
-  height: 90px;
-  margin-right: 30px;
-
+  padding-top: 20px;
+  padding-bottom: 20px;
+  fill: var(--icons-color);
   border: 1px solid #afb1b8;
 }
 
-.icon-clients .item:nth-child(6) {
-  margin-right: 0px;
-}
-
-.icon-clients .item:hover,
-.icon-clients .item:focus {
+.link-logo:hover,
+.link-logo:focus {
   border: 1px solid var(--acent-color);
-}
-
-.logo-clients {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  fill: var(--icons-color);
-  height: 49px;
-  width: 80px;
-  padding: 20px 45px;
-}
-
-.logo-clients:hover,
-.logo-clients:focus {
   fill: var(--acent-color);
 }
 
